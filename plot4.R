@@ -26,7 +26,7 @@ names(plotdata)<-c("Time","totdate","Global_active_power","voltage", "Sub_meteri
 
 #we create a png figure which will contain the plot4
 png(file="plot4.png",width=480,height=480)
-par(mfrow=c(2,2),bg=NA)#, mar=c(5,4,5,2))
+par(mfrow=c(2,2),bg=NA)
 with(plotdata,{
         plot(totdate2, Global_active_power, type="l", xlab="", ylab = "Global Active Power")
         plot(totdate2, voltage, type="l", xlab="datetime", ylab = "Voltage")
